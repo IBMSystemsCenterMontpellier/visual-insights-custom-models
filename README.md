@@ -1,6 +1,5 @@
 # IBM Visual Insights - Custom Models
 
-
 This repository contains examples of custom models for
 [IBM Visual Insights](https://www.ibm.com/fr-fr/marketplace/ibm-visual-insights/resources) (previously IBM PowerAI Vision).
 
