@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Source: https://www.ibm.com/support/knowledgecenter/SSRU69_1.1.4/base/vision_prepare_custom_deploy.html
+Source: https://www.ibm.com/support/knowledgecenter/SSRU69_1.2.0/base/vision_prepare_custom_deploy.html
 """
 
 import os
@@ -11,7 +11,7 @@ import keras
 import numpy as np
 from PIL import Image
 
-# Import required by PowerAI Vision
+# Import required by Visual Insights
 from deploy_interface import DeployCallback
 
 # Import SSD7 model package

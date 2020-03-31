@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# fake MonitorHandler imitating PowerAI Vision interface / displays metrics instead of plotting them
+# fake MonitorHandler imitating Visual Insights interface / displays metrics instead of plotting them
 
 class FakeMonitorHandler():
     def __init__(self):

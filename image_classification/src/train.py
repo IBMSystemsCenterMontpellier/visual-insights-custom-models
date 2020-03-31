@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Doc: https://www.ibm.com/support/knowledgecenter/SSRU69_1.1.4/base/vision_prepare_custom_train.html#vision_prepare_custom_train
+Source: ttps://www.ibm.com/support/knowledgecenter/SSRU69_1.2.0/base/vision_prepare_custom_train.html
 """
 
 from PIL import Image
@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 import logging as log
 import os
 
-# Import required by PowerAI Vision
+# Import required by Visual Insights
 from train_interface import TrainCallback
 
 BATCH_SIZE = 16
@@ -101,7 +101,7 @@ class MyTrain(TrainCallback):
         Callback for training
         Params:
             monitor_handler: MonitorHandler object for train/test status monitoring
-            (see https://www.ibm.com/support/knowledgecenter/SSRU69_1.1.3/base/vision_custom_api.html
+            (see https://www.ibm.com/support/knowledgecenter/SSRU69_1.2.0/base/vision_custom_api.html
                 section "Monitoring and reporting statistics")
         Return: None
         """
@@ -111,7 +111,7 @@ class MyTrain(TrainCallback):
         # and calls the monitor_handler methods to update metrics:
         #   * training loss (in updateTrainMetrics)
         #   * testing loss and accuracy (in updateTestMetrics)
-        # allowing live graph plot in PowerAI Vision during training
+        # allowing live graph plot in Visual Insights during training
         def logMetrics(epoch, logs):
             current_iter = (epoch + 1) * self.dataset_size / BATCH_SIZE
             monitor_handler.updateTrainMetrics(
